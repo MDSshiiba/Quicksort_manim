@@ -29,14 +29,6 @@ def qSort(startNum, endNum,seq):
     if right + 1 < endNum:
         qSort(right+1, endNum,seq)
 
-def bubble_sort(seq):
-    n = len(seq) - 1
-    for i in range(n):
-        for j in range(n - i):
-            if seq[j] > seq[j+1]:
-                seq[j] , seq[j+1] = seq[j+1], seq[j]
-                yield (j,j+1)
-
 class SortAnimation(Scene):
     def construct(self):
         g = Group()
